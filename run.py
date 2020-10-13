@@ -11,7 +11,7 @@ def main(size):
         x = ""
         for each_byte in each_chunk:
             x += (hex(each_byte))
-        print("bad +=b\"{}\" # Chunk {}".format(x.replace("0x","\\x"),i))
+    print("bad +=b\"{}\" # Chunk {} Size {} bytes".format(x.replace("0x","\\x"),i,len(each_chunk)))
 
 
 def split(a, n):
